@@ -1,0 +1,60 @@
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageDebraFiscal from './debra-fiscal.jpg'
+
+export const caseStudy = {
+  client: 'Shandon Hotel Donegal',
+  title: 'Hotel Transfer Integration with ICRTouch',
+  description:
+    [
+    'The Shandon Hotel in Donegal needed a system to integrate ICRTouch bar and restaurant bills and add them direct to the bills for a room. No credit on room - no finalisation.'
+  ],
+  summary: [
+    'The Shandon Hotel in Donegal needed a system to integrate ICRTouch bar and restaurant bills and add them direct to the bills for a room.',
+    'No credit on room - no finalisation.'
+  ],
+  image: { src: imageHero },
+  date: '2022-01',
+  service: 'Web development, CMS',
+  testimonial: {
+    author: { name: 'Debra Fiscal', role: 'CEO of FamilyFund' },
+    content:
+      'Working with Studio, we felt more like a partner than a customer. They really resonated with our mission to change the way people convince their parents to cash out their pensions.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+The Shandon Hotel in Donegal, is a highly prestigeous property overlooking the altantic coast in Ireland.
+
+They needed integration with ICRTouch to transfer bills from till to room, seamlessly (via API) but with the security of knowing a transaction has been authorized before the till allows the sale to proceed.
+
+
+## What we did
+
+<TagList>
+  <TagListItem>Frontend (Next.js)</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+  <TagListItem>Infrastructure</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Debra Fiscal', role: 'CEO of FamilyFund' }}
+  image={{ src: imageDebraFiscal }}
+>
+  Working with Studio, we felt more like a partner than a customer. They really
+  resonated with our mission to change the way people convince their parents to
+  cash out their pensions.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="25%" label="Less traffic" />
+  <StatListItem value="10x" label="Page load times" />
+  <StatListItem value="15%" label="Higher infra costs" />
+  <StatListItem value="$1.2M" label="Legal fees" />
+</StatList>
