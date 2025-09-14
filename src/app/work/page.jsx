@@ -15,7 +15,7 @@ import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
+import logoCavavin from '@/images/clients/cavavin/logo.png'
 import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -93,7 +93,7 @@ function CaseStudies({ caseStudies }) {
 }
 
 const partners = [
-  ['ICRTouch', logoPhobia],
+  ['Cavavin', logoCavavin],
   ['RealEpos', logoFamilyFund],
   ['NextJs', logoUnseal],
   ['TailwindCSS', logoMailSmirk],
@@ -108,7 +108,7 @@ function Partners() {
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
+          Clients and partners
         </h2>
       </FadeIn>
       <FadeInStagger className="mt-10" faster>
@@ -121,7 +121,10 @@ function Partners() {
             <li key={partner} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-                  <Image src={logo} alt={partner} unoptimized />
+                  <Image src={logo} alt={partner} unoptimized height={50}/>
+                  <p className="mt-6 text-lg font-semibold text-neutral-950">
+                    &nbsp;{partner}
+                  </p>
                 </Border>
               </FadeIn>
             </li>
@@ -165,6 +168,7 @@ export default async function Work() {
       </Testimonial>
       */}
       <Partners />
+      
 
       <ContactSection />
     </RootLayout>
